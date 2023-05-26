@@ -1,5 +1,5 @@
 body {
-    background-color: #050505;
+    background-color: rgb(35, 23, 27);
     font-family: 'Roboto', sans-serif;
     color:white
 }
@@ -9,18 +9,20 @@ h1 {
     font-weight: bold;
     margin: 10px;
 }
-
+#content {
+    min-height: 10000px;
+}
 .container {
     position: fixed;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
 #percentContainer {
     transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
 }
-#informationContainer {
-    transform: translate(-50%, 50%);
-}
-#content {
-    min-height: 10000px;
+#JuliaContainer {
+    transform: translate(-50%, -50%);
 }

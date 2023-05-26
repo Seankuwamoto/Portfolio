@@ -23,7 +23,7 @@ function onScroll() {
     percentText.innerHTML = percentComplete + "%";
 
     // Positon and scale animations.
-    const animationElements = ['percentContainer', 'informationContainer', 'informationContainer2'];
+    const animationElements = ['percentContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip'];
 
     for (let id of animationElements) {
         const element = document.getElementById(id);
@@ -33,7 +33,7 @@ function onScroll() {
         let timing = 0;
         if (percentComplete == 100) {
             timing = 1;
-            timingIndex = dat.timings.length - 1;
+            timingIndex = dat.timings.length - 2;
         }
         else {
             // Goes through the animation timings and finds the current timing.
