@@ -1,5 +1,6 @@
 // Scroll handlers
 document.addEventListener('scroll', onScroll);
+document.addEventListener('mousemove', onMouseMove);
 window.addEventListener('resize', onScroll);
 
 let percentComplete = 0;
@@ -28,11 +29,13 @@ function onScroll() {
     percentComplete = Math.min(Math.round(scroll/maxScroll * 1000) / 10, 100);
     
     // Text box for percent complete
-    const percentText = document.getElementById('percent');
-    percentText.innerHTML = percentComplete + "%";
+    const titleText = document.getElementById('title');
+    titleText.addEventListener('click', function() {
+        window.scrollTo(0, 0);
+    });
 
     // Positon and scale animations.
-    const animationElements = ['percentContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip', 'JuliaDescription'];
+    const animationElements = ['titleContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip', 'JuliaDescription'];
 
     for (let id of animationElements) {
         const element = document.getElementById(id);
@@ -67,6 +70,20 @@ function onScroll() {
 
     }
 
+}
+
+function onMouseMove() {
+    const titleText = document.getElementById('title');
+    if (percentComplete > 10) {
+        if (titleText == titleText.parentElement.querySelector(':hover')) {
+            titleText.style.cursor = 'pointer';
+            titleText.style.transform = 'scale(1.05)';
+        }
+        else {
+            titleText.style.cursor = 'default';
+            titleText.style.transform = 'scale(1)';
+        }
+    }
 }
 
 function smoothLerp(x, y, t) {
