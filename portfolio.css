@@ -1,0 +1,26 @@
+body {
+    background-color: #050505;
+    font-family: 'Roboto', sans-serif;
+    color:white
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+#percentContainer {
+    transform: translate(-50%, -50%) scale(2);
+}
+#informationContainer {
+    transform: translate(-50%, 50%);
+}
+#content {
+    min-height: 10000px;
+}
