@@ -2,6 +2,15 @@
 document.addEventListener('scroll', onScroll);
 window.addEventListener('resize', onScroll);
 
+let percentComplete = 0;
+const size = 20000;
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Set the content div to the right height
+    const content = document.getElementById('content');
+    content.style.height = size + 'px';
+});
+
 // This function also gets called on window resize.
 function onScroll() {
 
@@ -16,14 +25,14 @@ function onScroll() {
     const maxScroll = document.body.scrollHeight - window.innerHeight;
 
     // Percentage of scroll (rounded to 1 decimal place)
-    const percentComplete = Math.min(Math.round(scroll/maxScroll * 1000) / 10, 100);
+    percentComplete = Math.min(Math.round(scroll/maxScroll * 1000) / 10, 100);
     
     // Text box for percent complete
     const percentText = document.getElementById('percent');
     percentText.innerHTML = percentComplete + "%";
 
     // Positon and scale animations.
-    const animationElements = ['percentContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip'];
+    const animationElements = ['percentContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip', 'JuliaDescription'];
 
     for (let id of animationElements) {
         const element = document.getElementById(id);

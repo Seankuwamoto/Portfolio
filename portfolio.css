@@ -26,3 +26,15 @@ h1 {
 #JuliaContainer {
     transform: translate(-50%, -50%);
 }
+#JuliaDescription {
+    width: 40%;
+    height: 60%;
+    opacity: 0.7;
+    background-color: white;
+    color: black;
+}
+.text {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
