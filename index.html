@@ -8,6 +8,10 @@
         <!-- p5 library for graphics -->
         <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
 
+        <!-- Desmos -->
+        <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+        <script src="desmos.js"></script>
+
         <!-- font -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
@@ -46,19 +50,23 @@
             </div>
             <div id="informationContainer" class="container">
                 <h1 id="name">Hi! I'm Sean.</h1>
-                <p id="description">Currently a student at the Bay School of San Francisco who enjoys <a href="https://github.com/seankuwamoto" rel="noreferrer noopener" target="_blank">programming</a> and <a href="https://www.desmos.com/calculator/imsqvbiwpa" rel="noreferrer noopener" target="_blank">making art</a> with the <a href="https://www.desmos.com/" rel="noreferrer noopener" target="_blank">Desmos</a> graphing calculator. I mainly work with Javascript, but I am also comfortable with HTML, CSS, SQL, Regex, Swift, LaTeX, C, GLSL, and Python, and am currently learning Java.</p>
+                <p id="description">Currently a student at the Bay School of San Francisco who enjoys <a href="https://github.com/seankuwamoto" rel="noreferrer noopener" target="_blank">programming</a> and <a href="https://www.desmos.com/calculator/imsqvbiwpa" rel="noreferrer noopener" target="_blank">making art</a> with the <a href="https://www.desmos.com/" rel="noreferrer noopener" target="_blank">Desmos</a> graphing calculator. I mainly work with Javascript, but I am also comfortable with HTML, CSS, SQL, Regex, Swift, LaTeX, C, GLSL, and Python, and am currently learning Java <em style="color: rgb(200, 200, 200);">(Yes, I know not all of those are technically programming languages, but a longer list is more impressive, right?).</em></p>
             </div>
             <div id="informationContainer2" class="container">
                 <h1 id="name">This website has style.</h1>
-                <p id="description">I've made a few websites before in the past, but this is my first attempt at a website that is meant to be looked at by people that aren't me. Most of my interest in programming comes from its mathematical and logical beauties, so it was a nice challenge for me to finally push myself to learn css and try out various things with the styling of this website.</p>
+                <p id="description">I've made a few websites before, but this is my first attempt at a website that is meant to be looked at by people that aren't me. Most of my interest in programming comes from its mathematical and logical beauties, so it was a nice challenge for me to finally push myself to learn css and try out various things with the styling of this website.</p>
             </div>
             <div id="informationContainer3" class="container">
                 <h1 id="name">As you scroll, stuff shows up.</h1>
                 <p id="description">Inspired by <a href="https://jaideng1.github.io/" rel="noreferrer noopener" target="_blank">a website</a> that my friend had made, I knew I wanted to make this website have various transitions based on scrolling.</p>
             </div>
             <div id="informationContainer4" class="container">
-                <h1 id="name">A graphing calculator?</h1>
-                <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos earum corporis vero iste illum repellendus nobis. Id reprehenderit porro, tempora asperiores ab neque sequi nesciunt dicta deserunt, provident sed.</p>
+                <div id="expressions" class="calculator"></div>
+                <div id="DesmosInfo">
+                    <h1 id="name">A graphing calculator?</h1>
+                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos earum corporis vero iste illum repellendus nobis. Id reprehenderit porro, tempora asperiores ab neque sequi nesciunt dicta deserunt, provident sed.</p>
+                </div>
+                <div id="graph" class="calculator"></div>
             </div>
             <div id="informationContainer5" class="container">
                 <h1 id="name">A canvas.</h1>
@@ -66,7 +74,7 @@
             </div>
             <div id="informationContainer6" class="container">
                 <h1 id="name">That's all for now.</h1>
-                <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos earum corporis vero iste illum repellendus nobis. Id reprehenderit porro, tempora asperiores ab neque sequi nesciunt dicta deserunt, provident sed.</p>
+                <p id="description">This portfolio is incomplete. As I keep working on more projects, I plan on adding more of them to this website. You can click my name in the corner to go back to the top, and of course please come back later to (hopefully) see new stuff!</p>
             </div>
         </div>
     </body>

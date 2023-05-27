@@ -1,8 +1,8 @@
 const animationData = {
     "titleContainer": {
         "timings": [0, 5, 10, 100],
-        "relativeTranslate": [[-50, -50], [-50, -50], [-50, -50], [-50, -50]],
-        "translate": [[0,0], [0, 0], [-0.4, -0.9], [-0.4, -0.9]],
+        "relativeTranslate": [[-50, -50], [-50, -50], [0, 0], [0, 0]],
+        "translate": [[0,0], [0, 0], [-0.95, -1], [-0.95, -1]],
         "scale": [2, 2, 1, 1],
         "opacity": [1, 1, 1, 1]
     },
@@ -53,7 +53,7 @@ const animationData = {
         "relativeTranslate": [[-50, -25], [-50, -25], [-50, -50], [-50, -50], [-50, -75], [-50, -75]],
         "translate": [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
         "scale": [1, 1, 1, 1, 1, 1],
-        "opacity": [0, 0, 0.7, 0.7, 0, 0]
+        "opacity": [0, 0, 1, 1, 0, 0]
     },
     "JuliaContainer": {
         "timings": [0, 35, 40, 53, 55, 100],
