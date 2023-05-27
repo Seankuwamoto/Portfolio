@@ -23,7 +23,7 @@ vec2 csquare(vec2 z) {
 }
 
 vec3 turbo(in float x) {
-  // if (x == -1.0) return rgb(0.0, 0.0, 0.0);
+  if (x == -1.0) return rgb(30.0, 30.0, 30.0);
   const vec4 kRedVec4 = vec4(0.13572138, 4.61539260, -42.66032258, 132.13108234);
   const vec4 kGreenVec4 = vec4(0.09140261, 2.19418839, 4.84296658, -14.18503333);
   const vec4 kBlueVec4 = vec4(0.10667330, 12.64194608, -60.58204836, 110.36276771);

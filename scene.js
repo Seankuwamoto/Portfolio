@@ -20,10 +20,13 @@ function setup() {
 }
 
 function draw() {  
+
+  document.getElementById('scrollArrow').style.transform = `translate(0, ${Math.sin(frameCount / 13) * 10}px)`;
+
   // shader() sets the active shader with our shader
   shader(theShader);
 
-  if (percentComplete < 45) {
+  if (percentComplete < 47) {
     target = [width/2+107.5, height/2];
   }
   else {
