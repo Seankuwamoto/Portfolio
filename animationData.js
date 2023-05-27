@@ -28,7 +28,21 @@ const animationData = {
         "opacity": [0, 0, 1, 0, 0]
     },
     "informationContainer4": {
-        "timings": [0, 55, 60, 100],
+        "timings": [0, 55, 60, 65, 100],
+        "relativeTranslate": [[-50, 50], [-50, 50], [-50, -50], [-50, -150], [-50, -150]],
+        "translate": [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
+        "scale": [1, 1, 1, 1, 1],
+        "opacity": [0, 0, 1, 0, 0]
+    },
+    "informationContainer5": {
+        "timings": [0, 65, 70, 75, 100],
+        "relativeTranslate": [[-50, 50], [-50, 50], [-50, -50], [-50, -150], [-50, -150]],
+        "translate": [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
+        "scale": [1, 1, 1, 1, 1],
+        "opacity": [0, 0, 1, 0, 0]
+    },
+    "informationContainer6": {
+        "timings": [0, 75, 80, 100],
         "relativeTranslate": [[-50, 50], [-50, 50], [-50, -50], [-50, -50]],
         "translate": [[0, 0], [0, 0], [0, 0], [0, 0]],
         "scale": [1, 1, 1, 1],

@@ -35,7 +35,7 @@ function onScroll() {
     });
 
     // Positon and scale animations.
-    const animationElements = ['titleContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip', 'JuliaDescription', 'scrollArrowContainer'];
+    const animationElements = ['titleContainer', 'informationContainer', 'informationContainer2', 'informationContainer3', 'informationContainer4', 'JuliaContainer', 'JuliaTooltip', 'JuliaDescription', 'scrollArrowContainer', 'informationContainer5', 'informationContainer6'];
 
     for (let id of animationElements) {
         const element = document.getElementById(id);
