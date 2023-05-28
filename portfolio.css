@@ -18,7 +18,7 @@ a:visited {
     color: rgb(155,14,1);   
 }
 #content {
-    min-height: 10000px;
+    min-height: 1000px;
 }
 .container {
     position: fixed;
@@ -69,4 +69,8 @@ a:visited {
 .calculator {
     width: 25%;
     height: 60vh;
+    border-radius: 25px !important;
+}
+.dcg-container {
+    border-radius: 6px;
 }

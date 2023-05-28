@@ -4,7 +4,7 @@ document.addEventListener('mousemove', onMouseMove);
 window.addEventListener('resize', onScroll);
 
 let percentComplete = 0;
-const size = 20000;
+const size = 10000;
 
 document.addEventListener('DOMContentLoaded', function() {
     // Set the content div to the right height
@@ -31,7 +31,9 @@ function onScroll() {
     // Text box for percent complete
     const titleText = document.getElementById('title');
     titleText.addEventListener('click', function() {
-        window.scrollTo(0, 0);
+        if (percentComplete > 10) {
+            window.scrollTo(0, 0);
+        }
     });
 
     // Positon and scale animations.
@@ -66,7 +68,10 @@ function onScroll() {
             ${smoothLerp(dat.scale[timingIndex], dat.scale[timingIndex + 1], timing)}
         )`;
         // Applies opacity effects.
-        element.style.opacity = smoothLerp(dat.opacity[timingIndex], dat.opacity[timingIndex + 1], timing);
+        let opacityValue = smoothLerp(dat.opacity[timingIndex], dat.opacity[timingIndex + 1], timing);
+        element.style.opacity = opacityValue;
+        if (opacityValue == 0) element.style.visibility = 'hidden';
+        else element.style.visibility = 'visible';
 
     }
 
