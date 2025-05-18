@@ -2,7 +2,7 @@ const animationData = {
     "titleContainer": {
         "timings": [0, 5, 10, 100],
         "relativeTranslate": [[-50, -50], [-50, -50], [0, 0], [0, 0]],
-        "translate": [[0,0], [0, 0], [-0.95, -1], [-0.95, -1]],
+        "translate": [[0,0], [0, 0], [-0.95, -0.95], [-0.95, -0.95]],
         "scale": [2, 2, 1, 1],
         "opacity": [1, 1, 1, 1]
     },

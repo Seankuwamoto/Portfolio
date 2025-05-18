@@ -22,6 +22,10 @@ vec2 csquare(vec2 z) {
   return vec2(z.x * z.x - z.y * z.y, 2.0 * z.x * z.y);
 }
 
+vec2 cmult(vec2 z1, vec2 z2) {
+  return vec2(z1.x * z2.x - z1.y * z2.y, z1.x * z2.y + z2.x * z1.y);
+}
+
 vec3 turbo(in float x) {
   if (x == -1.0) return rgb(30.0, 30.0, 30.0);
   const vec4 kRedVec4 = vec4(0.13572138, 4.61539260, -42.66032258, 132.13108234);
@@ -96,7 +100,7 @@ float isInJulia(vec2 coord, vec2 mousePos) {
       return 1.0;
     }
 
-    // The mandelbrot equation
+    // The julia
     z = csquare(z) + mousePos;
     // If the magnitude of z is greater than 2, return the number of iterations it took to get there
     if (length(z) > 2.0) {
